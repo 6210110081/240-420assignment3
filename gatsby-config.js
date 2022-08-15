@@ -30,5 +30,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: '@directus/gatsby-source-directus',
+      options: {
+				url: `g2xiu8wz.directus.app/`, // Fill with your Directus instance address
+				auth: {
+					// token: 'my_secret_token', // You can use a static token from an user
+
+					// Or you can use the credentials of an user
+					email: "6210110086@psu.ac.th",
+					password: "q[KGo~6d2JGp]6PpBMFtITVh",
+				},
+			},
+    }
   ],
 }
