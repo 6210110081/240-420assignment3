@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Assignment 1b`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -17,31 +18,31 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-sass`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        sassOptions: {
+          precision: 6,
+        },
       },
     },
     {
-      resolve: '@directus/gatsby-source-directus',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-				url: `g2xiu8wz.directus.app/`, // Fill with your Directus instance address
-				auth: {
-					// token: 'my_secret_token', // You can use a static token from an user
-
-					// Or you can use the credentials of an user
-					email: "6210110086@psu.ac.th",
-					password: "q[KGo~6d2JGp]6PpBMFtITVh",
-				},
-			},
-    }
+        name: `gatsby-starter-bootstrap-5`,
+        short_name: `gb5-starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `src/images/cat.png`,
+      },
+    },
+    {
+      resolve: "@directus/gatsby-source-directus",
+      options: {
+        url: "g2xiu8wz.directus.app",
+      },
+    },
+    `gatsby-plugin-gatsby-cloud`,
   ],
 }
