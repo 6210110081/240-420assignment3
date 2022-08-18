@@ -37,8 +37,13 @@ const Header = ({ siteTitle }) => {
               </ExactNavLink>
             </li>
             <li className="nav-item">
-              <ExactNavLink to="/subject">
+              <ExactNavLink to="/subject-list">
                 <b>Subject</b>
+              </ExactNavLink>
+            </li>
+            <li className="nav-item">
+              <ExactNavLink to="/student-list">
+                <b>Student</b>
               </ExactNavLink>
             </li>
           </ul>
