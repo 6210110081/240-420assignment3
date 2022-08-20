@@ -9,6 +9,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about-us/`, `/projects/*`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
