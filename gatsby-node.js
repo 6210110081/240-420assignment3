@@ -39,12 +39,12 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
+  // createPage({
+  //   path: "/using-dsg",
+  //   component: require.resolve("./src/templates/using-dsg.js"),
+  //   context: {},
+  //   defer: true,
+  // })
 }
 
 const students = [

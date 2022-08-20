@@ -33,23 +33,23 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-bootstrap-5`,
-        short_name: `gb5-starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `standalone`,
-      },
-    },
-    {
-      resolve: "@directus/gatsby-source-directus",
-      options: {
-        url: "g2xiu8wz.directus.app",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `gatsby-starter-bootstrap-5`,
+    //     short_name: `gb5-starter`,
+    //     start_url: `/`,
+    //     background_color: `#663399`,
+    //     theme_color: `#663399`,
+    //     display: `standalone`,
+    //   },
+    // },
+    // {
+    //   resolve: "@directus/gatsby-source-directus",
+    //   options: {
+    //     url: "g2xiu8wz.directus.app",
+    //   },
+    // },
     `gatsby-plugin-gatsby-cloud`,
   ],
 }
